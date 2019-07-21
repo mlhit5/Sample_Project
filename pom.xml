@@ -198,17 +198,24 @@
 			</plugin>
 		</plugins>
 	</build>
-	 <distributionManagement>
+	 <repositories>
+                 <repository>
+                 <id>maven-group</id>
+                 <url>http://18.221.17.250:8081/repository/lax3/</url>
+               </repository>
+  </repositories>
+         <distributionManagement>
               <repository>
-		  <id>1</id>
-	          <name>Internal releases</name>
-		      <url>http://18.223.210.135:8081/repository/lax2nexus/</url>
-	      </repository>
-	      <snapshotRepository>
-		  <id>deployment</id>
-		  <name>2</name>
-		  <url>http://18.223.210.135:8081/repository/laxnexus/</url>
-	      </snapshotRepository>
-	 </distributionManagement>
-	<name>simple-web-app</name>
+                  <id>deployment</id>
+                  <name>Internal releases</name>
+                      <url>http://18.221.17.250:8081/repository/lax2nexus/</url>
+              </repository>
+              <snapshotRepository>
+                  <id>deployment</id>
+                  <name>2</name>
+                  <url>http://18.221.17.250:8081/repository/laxnexus/</url>
+              </snapshotRepository>
+         </distributionManagement>
+        <name>simple-web-app</name>
 </project>
+
